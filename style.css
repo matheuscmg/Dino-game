@@ -1,0 +1,46 @@
+#score { text-align: center; }
+
+#game {
+  width: 600px;
+  height: 300px;
+  border: 2px solid black;
+  margin: auto;
+  background-image: url("./background.jpg");
+  background-size: cover;
+}
+
+#dino {
+  height: 90px;
+  width: 90px;
+  top: 210px;
+  position: relative;
+  background-image: url("./dino.png");
+  background-size: cover;
+}
+
+#mina {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 170px;
+  left: 550px;
+  background-image: url("./mina.png");
+  background-size: cover;
+  animation: mina 1.33s infinite;
+}
+
+@keyframes mina {
+  0%{left: 550px;}
+  100%{left: -50px;}
+}
+
+.jump-animation {
+  animation: jump 0.5s;
+}
+
+@keyframes jump {
+  0%{top: 225px;}
+  50%{top: 75px;}
+  75%{top: 75px;}
+  100%{top: 225px;}
+}
